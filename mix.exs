@@ -48,11 +48,14 @@ defmodule Chargebeex.MixProject do
       {:jason, "~> 1.0"},
       {:hackney, "~> 1.18"},
       {:plug, "~>1.11"},
+      {:typed_struct, "~> 0.3.0"},
       {:ex_doc, "~> 0.23", only: :dev, runtime: false},
       {:hammox, "~> 0.5", only: :test},
       {:mix_test_watch, "~> 1.0", only: [:dev, :test], runtime: false},
-      {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
-      {:typed_struct, "~> 0.3.0"}
+      {:ex_check, "~> 0.15.0", only: [:dev], runtime: false},
+      {:credo, ">= 0.0.0", only: [:dev, :test], runtime: false},
+      {:dialyxir, ">= 0.0.0", only: [:dev], runtime: false},
+      {:doctor, ">= 0.0.0", only: [:dev], runtime: false}
     ]
   end
 
